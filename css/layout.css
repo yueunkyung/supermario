@@ -1,6 +1,6 @@
 html { font-size: 10px; }
 
-body { font-family: "Montserrat","Noto Sans KR"; font-size: 1.6rem; background-color: #111; }
+body { font-family: "Montserrat", "Noto Sans KR"; font-size: 1.6rem; background-color: #111; }
 
 #header { position: fixed; z-index: 3; display: -webkit-box; display: -ms-flexbox; display: flex; width: 100%; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; padding-right: 50px; }
 
@@ -14,13 +14,13 @@ body { font-family: "Montserrat","Noto Sans KR"; font-size: 1.6rem; background-c
 
 #header #logo img { width: 200px; }
 
-#main { position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: url("../images/bg02.jpg") no-repeat 50%; background-size: cover; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+#main { left: 0; top: 0; height: 100vh; background: url("../images/bg02.jpg") no-repeat 50%; background-size: cover; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; overflow: hidden; }
 
-#main .marioList { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-perspective: 5000px; perspective: 5000px; -webkit-perspective-origin: 50% 10%; perspective-origin: 50% 10%; position: relative; width: 100%; height: 100%; margin-left: 400px; }
+#main .marioList { position: relative; width: 100%; height: 100%; }
 
-#main .marioList li { width: 1000px; height: 500px; position: absolute; }
+#main .marioList li { width: 1000px; height: 500px; }
 
-#main .marioList li .bg { width: 100%; height: 100%; background-color: #fff; border-radius: 40px; }
+#main .marioList li .bg { width: 1000px; height: 500px; background-color: #fff; border-radius: 40px; }
 
 #main .marioList li .mario { position: absolute; z-index: 5; left: -100px; -webkit-filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.2)); filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.2)); }
 
@@ -38,9 +38,9 @@ body { font-family: "Montserrat","Noto Sans KR"; font-size: 1.6rem; background-c
 
 #menu ul li span { display: inline-block; position: relative; padding-left: 15px; }
 
-#menu ul li.on span:before { width: calc(100% +  15px); }
+#menu ul li.on span:before { width: calc(100% + 15px); }
 
-#menu ul li span:before { content: ''; display: block; width: 2px; height: 2px; border-radius: 100px; background-color: #f00; left: 0; top: 50%; margin-top: -1px; position: absolute; -webkit-transition: all 0.25s ease; transition: all 0.25s ease; }
+#menu ul li span:before { content: ""; display: block; width: 2px; height: 2px; border-radius: 100px; background-color: #f00; left: 0; top: 50%; margin-top: -1px; position: absolute; -webkit-transition: all 0.25s ease; transition: all 0.25s ease; }
 
 #footer { position: fixed; bottom: 30px; text-align: center; display: -webkit-box; display: -ms-flexbox; display: flex; width: 100%; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
