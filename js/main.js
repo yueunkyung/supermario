@@ -71,6 +71,7 @@ function loadMario(_url) {
 loadMario("../data/mario.json");
 
 let old = 0;
+
 $("#gnb .list li").on("click", function () {
     if (old === $(this).index()) return;
     const path = "../data/";
